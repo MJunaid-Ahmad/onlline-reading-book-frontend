@@ -1,0 +1,81 @@
+.sidebar {
+  width: 250px;
+  height: 100vh;
+  background: linear-gradient(180deg, #1a1a2e 0%, #16213e 100%);
+  color: white;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  left: 0;
+  top: 0;
+  box-shadow: 4px 0 15px rgba(0, 0, 0, 0.3);
+}
+
+.sidebar-header {
+  padding: 25px 20px;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-header h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+  background: linear-gradient(135deg, #5f6dfb, #7b3fe4);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.sidebar-menu {
+  list-style: none;
+  padding: 20px 0;
+  margin: 0;
+  flex: 1;
+}
+
+.sidebar-menu li {
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  border-left: 3px solid transparent;
+}
+
+.sidebar-menu li:hover {
+  background: rgba(95, 109, 251, 0.15);
+  border-left: 3px solid #5f6dfb;
+}
+
+.sidebar-menu li a {
+  color: rgba(255, 255, 255, 0.8);
+  text-decoration: none;
+  font-size: 15px;
+  display: block;
+  transition: color 0.3s ease;
+}
+
+.sidebar-menu li:hover a {
+  color: #5f6dfb;
+}
+
+.sidebar-footer {
+  padding: 20px;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.sidebar-footer button {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.1);
+  color: white;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.sidebar-footer button:hover {
+  background: #e74c3c;
+  transform: translateY(-2px);
+}
