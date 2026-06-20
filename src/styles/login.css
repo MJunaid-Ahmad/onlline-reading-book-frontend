@@ -1,0 +1,96 @@
+/* Reset + base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', sans-serif;
+}
+#root{
+  width: 1126px;
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+    border-inline: 1px solid var(--border);
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    justify-content: center;
+}
+/* Full screen background */
+body {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  background: linear-gradient(135deg, #5f6dfb, #7b3fe4);
+}
+
+/* Login Card */
+.login-container {
+  width: 320px;
+  padding: 30px 25px;
+  background: rgba(255, 255, 255, 0.95);
+  border-radius: 15px;
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: 0.3s;
+  align-content: center;
+}
+
+/* Optional hover effect */
+.login-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Heading */
+.login-container h2 {
+  margin-bottom: 20px;
+  color: #333;
+}
+
+/* Inputs */
+.login-container input {
+  width: 100%;
+  padding: 12px;
+  margin: 10px 0;
+  border: none;
+  border-radius: 10px;
+  background: #2f2f2f;
+  color: white;
+  font-size: 14px;
+  outline: none;
+  transition: 0.3s;
+}
+
+/* Placeholder */
+.login-container input::placeholder {
+  color: #bbb;
+}
+
+/* Focus effect */
+.login-container input:focus {
+  background: #3a3a3a;
+  box-shadow: 0 0 8px rgba(95, 109, 251, 0.6);
+}
+
+/* Button */
+.login-container button {
+  width: 100%;
+  padding: 12px;
+  margin-top: 15px;
+  border: none;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #5f6dfb, #6c7bff);
+  color: white;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+/* Button hover */
+.login-container button:hover {
+  background: linear-gradient(135deg, #4e5be0, #5a6af0);
+  transform: scale(1.02);
+}
