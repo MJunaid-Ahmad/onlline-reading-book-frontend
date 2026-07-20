@@ -16,13 +16,12 @@ function AddCategory() {
     setMessage("");
 
     try {
-      const token = localStorage.getItem("token");
       const response = await fetch("http://localhost:3000/api/category/add-category", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
-          Authorization: token ? `Bearer ${token}` : "",
         },
+        credentials: "include",
         body: JSON.stringify({ name, discription: description }),
       });
 

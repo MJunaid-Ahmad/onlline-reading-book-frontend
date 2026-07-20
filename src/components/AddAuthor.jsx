@@ -24,12 +24,11 @@ function AddAuthor() {
     }
 
     try {
-      const token = localStorage.getItem("token");
       const response = await fetch(
         "http://localhost:3000/api/author/add-author",
         {
           method: "POST",
-          headers: { Authorization: token ? `Bearer ${token}` : "" },
+          credentials: "include",
           body: formData,
         },
       );
